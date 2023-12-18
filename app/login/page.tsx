@@ -27,8 +27,6 @@ const Login = () => {
             const token = response.data.token;
 
             login(token);
-
-            console.log(token);
             router.push("/");
         } catch (error) {
             alert(error);
